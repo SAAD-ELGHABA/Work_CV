@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="3.4.3"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<style>
+    #last_ul li{
+        border-left: 2px solid blue;
+        margin: 5px;
+        padding-left: 10px;
+    }
+    *{
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    .familly_div{
+        transition-duration: 0.5s;
+    }
+</style>
+<body>
+    <div class="container mx-auto sm:flex">
+        <aside class="bg-slate-300 sm:w-1/4">
+            <div class="familly_div text-center">
+                <img src="icon-button-man_665280-69540.webp" alt="personal_picture" class="w-1/2 mx-auto"
+                    style="border-radius: 50%;">
+                <h4 class="underline text-2xl font-bold mx-auto mt-2 sm:text-1xl">F-Name L-Name</h4>
+                <h5 class="font-bold">Age years old</h5>
+            </div>
+            <div class="familly_div text-center" style="line-height: 30px;">
+                <h5 class="familly_h5">CORDONNÉES</h5>
+                <ul class="text-sm">
+                    <li>
+                        <i class="fa-solid fa-phone ">
+                        </i>
+                        01.23.45.67.89
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope">
+                        </i>
+                        <a href="">
+                            NickName@gmail.com
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot">
+                        </i>
+                        <a href="">
+                            Location XX,X
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-car-side">
+                        </i>
+                        permis Niveu X
+                    </li>
+                </ul>
+            </div>
+            <div class="familly_div text-center">
+                <h5 class="familly_h5"> DOMAINES DÉXPRISE
+                </h5>
+                <ul class="text-sm">
+                    <li>
+                        Art et design
+                    </li>
+                    <li>
+                        Commercialisation
+                    </li>
+                    <li>
+                        Communication
+                    </li>
+                    <li>
+                        Web design
+                    </li>
+                    <li>
+                        Designs pour publicities
+                    </li>
+                </ul>
+            </div>
+            <div class="familly_div text-center">
+                <h5 class="familly_h5"> LANGUES
+                </h5>
+                <label for="arabe" class="w-2/6 text-sm">Arabe :</label>
+                <input type="range" id="arabe" class="w-3/6" style="pointer-events: none;"  value="100"><br>
+                <label for="english" class="w-2/6 text-sm">Enlish :</label>
+                <input type="range" id="english"class="w-3/6"  style="pointer-events: none;"  value="80"><br>
+                <label for="fran" class="w-2/6 text-sm">Francais :</label>
+                <input type="range" id="fran" class="w-3/6" style="pointer-events: none;"  value="60">
+            </div>
+            <div class="familly_div text-center">
+                <h5 class="familly_h5"> 
+                    LOGICIEL
+                </h5>
+                <ul class="text-sm">
+                    <li>
+                        . CIMATIQUE TIAPORTAL
+                    </li>
+                    <li>
+                        . PORTALE ÉlÉCTROTECH 
+                    </li>
+                    <li>
+                        . DELTA_HMI 
+                    </li>
+                    <li>
+                        . PROTEUS ET MECRO C 
+                    </li>
+                    <li>
+                        . CATIA V5 
+                    </li>
+                </ul>
+            </div>
+            <div class="familly_div text-center">
+                <h5 class="familly_h5"> 
+                    PRINCIPAUX INTÉRÉTS 
+                </h5>
+                <ul class="text-sm">
+                    <li>
+                         FOOTBALL
+                    </li>
+                    <li>
+                         LART
+                    </li>
+                    <li>
+                         ADVENTURES 
+                    </li>
+                    <li>
+                         VOYAGE
+                    </li>
+                </ul>
+            </div>
+            <div class="familly_div text-center">
+                <h5 class="familly_h5"> 
+                    Projet acadimique
+                </h5>
+                <p class="text-xs px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam praesentium voluptatem facere laboriosam velit unde aperiam ab. Assumenda, nisi amet.</p>
+            </div>
+        </aside>
+        <section class=" bg-slate-100 sm:w-3/4 pt-10">
+            <div class="familly_div">
+                <h3 class="text-2xl font-bold  my-2 ml-5">
+                    <i class="fa-solid fa-bullseye"></i>
+                    Objectif
+                </h3>
+                <p class="text-sm px-5 ps-8" id="objParagraph">
+                    <i class="fa-solid fa-angles-right"></i>
+                </p>
+            </div>
+            <div class="familly_div">
+                <h3 class="text-2xl font-bold  my-2 ml-5">
+                    <i class="fa-solid fa-certificate"></i>
+                    Diplômes ET Formation
+                </h3>
+                <div class="px-5 pl-8 flex my-2">
+                    <span class="w-1/6 text-center text-xs">
+                        Year 20XX
+                    </span>
+                    <span class="ml-3 w-5/6" style="border-left: 1px solid blue;">
+                        <h5 class="text-1xl ms-5 underline">Diplome 1</h5>
+                        <p id="dp1" class="mx-10 text-sm">
+
+                        </p>
+                    </span>
+                </div>
+                <div class="px-5 pl-8 flex my-2">
+                    <span class="w-1/6 text-center text-xs">
+                        Year 20XX
+                    </span>
+                    <span class="ml-3 w-5/6" style="border-left: 1px solid blue;">
+                        <h5 class="text-1xl ms-5 underline">Diplome 2</h5>
+                        <p id="dp2" class="mx-10 text-sm">
+
+                        </p>
+                </div>
+            </div>
+            <div class="familly_div">
+                <h3 class="text-2xl font-bold  my-2 ml-5">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    Expériences professionnelles 
+                </h3>
+                <div class="px-5 pl-8 flex my-2">
+                    <span class="w-1/6 text-center text-xs">
+                        dd-mm-YYYY <br> to <br> dd-mm-YYYY
+                    </span>
+                    <span class="ml-3 w-5/6" style="border-left: 1px solid blue;">
+                        <h5 class="text-1xl ms-5 text-blue-800">Experience pro 1</h5>
+                        <p class="text-1xl ms-5 font-bold">type of experience => <-periode-></p>
+                        <p class="text-slate-500 ms-5">Type of service</p>
+                        <p class="mx-10 text-sm" id="exp1">
+
+                        </p>
+                    </span>
+                </div>
+                <div class="px-5 pl-8 flex my-2">
+                    <span class="w-1/6 text-center text-xs">
+                        dd-mm-YYYY <br> to <br> dd-mm-YYYY
+                    </span>
+                    <span class="ml-3 w-5/6" style="border-left: 1px solid blue;">
+                        <h5 class="text-1xl ms-5 text-blue-800">Experience pro 2</h5>
+                        <p class="text-1xl ms-5 font-bold">type of experience => <-periode-></p>
+                        <p class="text-slate-500 ms-5">Type of service</p>
+                        <p class="mx-10 text-sm" id="exp2">
+
+                        </p>
+                    </span>
+                </div>
+                <div class="px-5 pl-8 flex my-2">
+                    <span class="w-1/6 text-center text-xs">
+                        dd-mm-YYYY <br> to <br> dd-mm-YYYY
+                    </span>
+                    <span class="ml-3 w-5/6" style="border-left: 1px solid blue;">
+                        <h5 class="text-1xl ms-5 text-blue-800">Experience pro 3</h5>
+                        <p class="text-1xl ms-5 font-bold">type of experience => <-periode-></p>
+                        <p class="text-slate-500 ms-5">Type of service</p>
+                        <p class="mx-10 text-sm" id="exp3">
+
+                        </p>
+                    </span>
+                </div>
+            </div>
+            <div class="familly_div">
+                <h3 class="text-2xl font-bold  my-2 ml-5">
+                    <i class="fa-solid fa-head-side-virus"></i>
+                    Compétences professionnélles
+                </h3>
+                <div class="px-5 pl-8 flex my-2">
+                <ul class="w-1/6 text-center font-bold text-blue-800">
+                    <i class="fa-solid fa-list"></i>
+                    Liste of abilities
+                </ul>
+                <ul class="ml-2 w-5/6" id="last_ul">
+                    <li> Bureautique: word, Excel, Power point</li>
+                    <li> Automatisation Industriel</li>
+                    <li> Maitrise de langage {Ladder et Grafcet} </li>
+                    <li> Éléctronique Analogique  </li>
+                    <li> Maintenans électrique </li>
+                    <li> Langage de programmation {langage C} </li>
+                    <li> Analyse des Schémas pneumatique </li>
+                    <li> Conception et Dessin {Catia V5 – Solide Works} </li>
+                </ul>
+            </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        let class_familly_h5 = "text-1xl sm:text-normal underline font-bold mx-auto my-2";
+        $(".familly_h5").addClass(class_familly_h5);
+
+        let class_familly_div = "border py-2 hover:bg-slate-200";
+        $(".familly_div").addClass(class_familly_div);
+        let textParagraph = "                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, ratione dolor! Dicta mollitia fugiat voluptatibus pariatur ratione tempore, tempora ut! Dolores sapiente, esse ex consequuntur in laborum qui, culpa, nulla fugiat optio reprehenderit laudantium incidunt dignissimos adipisci! Nobis ea expedita .";
+        let counter = 0;
+        let dp1Text = 'tempora ut! Dolores sapiente, esse ex consequuntur in laborum qui, culpa, nulla fugiat optio reprehenderit laudantium incidunt dignissimos adipisci! Nobis ea expedita';
+        let dp2Text = 'lor sit amet consectetur adipisicing elit. Numquam, ratione dolor! Dicta mollitia fugiat voluptatibus pariatur ratione tempore, tempoat optio reprehenderit laudantium incidunt dignissimos adipisci! Nobis ea expedita';
+        writing(counter, document.getElementById("objParagraph"), textParagraph);
+        writing(counter, document.getElementById("dp1"), dp1Text);
+        writing(counter, document.getElementById("dp2"), dp2Text);
+
+        function writing(counter, element, text) {
+            let interval = setInterval(function () {
+                element.innerHTML += text[counter];
+                counter += 1;
+                if (counter == text.length) {
+                    clearInterval(interval);
+                }
+            }, 50);
+        }
+        let ex1Text = 'lor sit amet consectetur adipisicing elit. Numquam, ratione dolor! Dicta mollitia fugiat voluptatibus pariatur ratione tio reprehenderit laudantium incidunt dignissimos adipisci! Nobis ea expedita';
+        let ex2Text = 'lor sit amet consectetur adipisicing elit. Numquam, ratione dolor! Dicta mollitia fugiat voluptatibus pariatur ratione tempore, tempoat optio reprehenderit laudantium incidunt dignissimos adipisci! Nobis ea expedita';
+        let ex3Text = 'lor sit amet consectetur adipisicing elit. Numquam, ratione dolor! Dicta mollitia edccdfe efcve efcve ecverd efcve fugiat voluptatibus pariatur ratione tempore, tempoat optio reprehenderit laudantium incidunt dignissimos adipisci! Nobis ea expedita';
+        writing(counter, document.getElementById("exp2"), dp2Text);
+        writing(counter, document.getElementById("exp1"), dp2Text);
+        writing(counter, document.getElementById("exp3"), dp2Text);
+    </script>
+</body>
+
+</html>
